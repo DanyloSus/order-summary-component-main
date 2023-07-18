@@ -16,6 +16,27 @@ $table-height: 100%/12% * 9%;
 $mobile-width: 100%/12% * 10.5%;
 $mobile-height: 100%/12% * 9.5%;
 
+@mixin transition-ease($thing: all) {
+  transition: $thing 0.5s;
+}
+
+@mixin text-anim($delay) {
+  animation: text-anim 1s ease-in-out $delay both;
+}
+
+@keyframes text-anim {
+  0% {
+    position: relative;
+    left: -20px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    opacity: 1;
+  }
+}
+
 :root {
   font-size: 16px;
   font-family: "Red Hat Display", sans-serif;
@@ -36,6 +57,7 @@ body {
 a,
 button {
   cursor: pointer;
+  @include transition-ease;
 }
 
 @media screen and (max-width: 550px) {

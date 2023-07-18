@@ -3,13 +3,13 @@ import React from "react";
 function Section() {
   return (
     <section>
-      <h1>Order Summary</h1>
-      <p>
+      <h1 className="anim">Order Summary</h1>
+      <p className="anim">
         You can now listen to millions of songs, audiobooks, and podcasts on any
         device anywhere you like!
       </p>
 
-      <div className="tariff">
+      <div className="tariff anim">
         <img src="./icon-music.svg" alt="icon music" />
         <div>
           <h4>Annual Plan</h4>
@@ -18,8 +18,8 @@ function Section() {
         <a>Change</a>
       </div>
 
-      <button>Proceed to Payment</button>
-      <a>Cancel order</a>
+      <button className="anim">Proceed to Payment</button>
+      <a className="anim">Cancel order</a>
     </section>
   );
 }

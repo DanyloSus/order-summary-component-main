@@ -3,4 +3,17 @@ header {
     width: 100%;
     height: auto;
   }
+
+  animation: img-start 1s both ease-in-out;
+}
+
+@keyframes img-start {
+  0% {
+    position: relative;
+    top: -50%;
+  }
+  100% {
+    position: relative;
+    top: 0%;
+  }
 }
