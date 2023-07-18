@@ -10,6 +10,12 @@ $dark-blue: hsl(223, 47%, 23%);
 $width: 100%/12% * 3.75%;
 $height: 100%/12% * 9%;
 
+$table-width: 100%/12% * 7%;
+$table-height: 100%/12% * 9%;
+
+$mobile-width: 100%/12% * 10.5%;
+$mobile-height: 100%/12% * 9.5%;
+
 :root {
   font-size: 16px;
   font-family: "Red Hat Display", sans-serif;
@@ -30,4 +36,10 @@ body {
 a,
 button {
   cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    background-image: url("./pattern-background-mobile.svg");
+  }
 }

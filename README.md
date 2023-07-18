@@ -3,6 +3,6 @@
 From *www.frontendmentor.io*
 
 - [x] Desktop design
-- [ ] Responsive design
+- [x] Responsive design
 - [ ] Animations
 - [ ] Functions

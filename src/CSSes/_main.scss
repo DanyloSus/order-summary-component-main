@@ -19,3 +19,17 @@ main {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+@media screen and (max-width: 1050px) {
+  main {
+    width: $table-width;
+    height: $table-height;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    width: $mobile-width;
+    height: $mobile-height;
+  }
+}
