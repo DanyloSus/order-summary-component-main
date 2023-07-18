@@ -1,0 +1,100 @@
+section {
+  flex: 1;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-align: center;
+
+  padding: 100vh/12vh * 0.75vh 100vw/12vw * 0.5vw;
+
+  h1 {
+    font-size: 28px;
+    letter-spacing: -1px;
+  }
+
+  h1,
+  h4 {
+    font-weight: 900;
+
+    color: $dark-blue;
+  }
+
+  p {
+    color: $desaturated-blue;
+  }
+
+  .tariff {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: hsla(245, 75%, 52%, 0.05);
+
+    width: 100%;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    div {
+      p::before {
+        content: "$";
+      }
+
+      margin: 0 auto 0 10px;
+    }
+
+    a {
+      font-weight: 700;
+
+      text-decoration: underline;
+
+      color: $bright-blue;
+    }
+
+    a:hover {
+      color: hsla(245, 75%, 52%, 0.8);
+    }
+
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: $bright-blue;
+
+    border: 0px;
+    border-radius: 10px;
+
+    color: white;
+
+    font-weight: 700;
+
+    font-family: "Red Hat Display", sans-serif;
+
+    padding: 15px;
+
+    box-shadow: 0px 20px 50px -17.5px $bright-blue;
+
+    margin-bottom: 15px;
+  }
+
+  button:hover {
+    background-color: hsla(245, 75%, 52%, 0.8);
+  }
+
+  a {
+    font-weight: 700;
+
+    color: $desaturated-blue;
+  }
+
+  a:hover {
+    color: $dark-blue;
+  }
+}

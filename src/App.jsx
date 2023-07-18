@@ -1,7 +1,15 @@
 import React from "react";
 
+import Header from "./Elements/Header";
+import Section from "./Elements/Section";
+
 function App() {
-  return <h1>Sus</h1>;
+  return (
+    <main>
+      <Header />
+      <Section />
+    </main>
+  );
 }
 
 export default App;
